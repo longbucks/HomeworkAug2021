@@ -1,11 +1,11 @@
 let pizzaPlace = "trishten's pizza";
-let numberOfToppings = 1;
+let numberOfToppings = 3;
 // Declaration of the 2 variables
 
 console.log(pizzaPlace, typeof pizzaPlace);
 console.log(numberOfToppings, typeof numberOfToppings);
 console.log(
-  `Welcome to ${pizzaPlace} we offer ${numberOfToppings} toppings , which are sausage, bacon and hamburger.`
+  `Welcome to ${pizzaPlace} place. The ${numberOfToppings} toppings we offer are sausage, hamburger , and pepperoni.`
 );
 // Console the types and variables with the use in the template literal.
 
