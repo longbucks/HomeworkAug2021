@@ -36,5 +36,6 @@ const servePizza = pizzaOven => {
   console.log(
     `Order up! Here's your ${pizzaOven.Size} ${pizzaOven.Crust} crust pizza with ${pizzaOven.Toppings}. Enjoy!`
   );
+  return pizzaOven;
 };
 servePizza(pizzaOven);
