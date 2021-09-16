@@ -15,11 +15,18 @@ const greetCustomer = () => {
 greetCustomer();
 
 const getPizzaOrder = (size, crust, ...toppings) => {
-  console.log(`One ${size} ${crust} crust pizza with ${toppings} coming up`);
+  console.log(toppings);
+  if (toppings.length == 0) {
+    console.log(`One ${size} ${crust} crust pizza with cheese coming up`);
+  } else {
+    console.log(`One ${size} ${crust} crust pizza with ${toppings} coming up`);
+  }
+
   let pizzaOrder = [size, crust, toppings];
   return pizzaOrder;
 };
-let pizzaOrder = getPizzaOrder("large", "thin", "mushroom ", "onion");
+
+let pizzaOrder = getPizzaOrder("large", "thin");
 
 const preparePizza = pizzaOrder => {
   console.log(`...Cooking Pizza...`);
@@ -33,9 +40,15 @@ const preparePizza = pizzaOrder => {
 let pizzaOven = preparePizza(pizzaOrder);
 
 const servePizza = pizzaOven => {
-  console.log(
-    `Order up! Here's your ${pizzaOven.Size} ${pizzaOven.Crust} crust pizza with ${pizzaOven.Toppings}. Enjoy!`
-  );
+  if (pizzaOven.Toppings.length == []) {
+    console.log(
+      `Order up! Here's your ${pizzaOven.Size} ${pizzaOven.Crust} crust plain cheese pizza  Enjoy!`
+    );
+  } else {
+    console.log(
+      `Order up! Here's your ${pizzaOven.Size} ${pizzaOven.Crust} crust pizza with ${pizzaOven.Toppings}. Enjoy!`
+    );
+  }
   return pizzaOven;
 };
 servePizza(pizzaOven);
