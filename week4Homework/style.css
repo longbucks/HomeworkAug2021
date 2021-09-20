@@ -1,0 +1,62 @@
+header {
+  background-color: rgb(19, 18, 18);
+}
+img {
+  height: 100px;
+  width: 150px;
+}
+body {
+  background-color: beige;
+}
+li {
+  background-color: white;
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+}
+
+.skills > li {
+  background-color: antiquewhite;
+
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 25px;
+}
+.hobbies > li {
+  background-color: antiquewhite;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 25px;
+}
+main > p {
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  font-size: 24px;
+}
+main {
+  background-color: antiquewhite;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.nav:hover {
+  background-color: blue;
+}
+footer {
+  background-color: rgb(19, 18, 18);
+  padding: 70px;
+}
+#contact {
+  float: left;
+  color: white;
+  font-size: 30px;
+  /* margin: 30px; */
+}
+#top {
+  float: right;
+  color: white;
+}
