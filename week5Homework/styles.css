@@ -1,0 +1,56 @@
+html {
+  background-color: antiquewhite;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+img {
+  height: 100%;
+}
+
+div {
+  border: 2px solid burlywood;
+  margin: 10px;
+}
+
+#introPic {
+  float: left;
+}
+
+#bio {
+  float: right;
+}
+#bio > li {
+  padding: 2px;
+}
+
+#pro {
+  width: auto;
+}
+@media only screen and (max-width: 740px) {
+  body {
+    text-align: center;
+    font-size: 16px;
+  }
+  #proCareer img,
+  #earlyCareer img {
+    width: 300px;
+  }
+  #top img {
+    height: 70px;
+  }
+  #bio li {
+    float: left;
+  }
+  #container {
+    position: relative;
+    align-items: center;
+  }
+}
